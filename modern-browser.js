@@ -23,7 +23,7 @@
 		el.style.zIndex = '999999999';
 		el.style.padding = '20px 12px';
 		el.style.textAlign = 'center';
-		document.body.append(el);
+		document.body.appendChild(el);
 
 		var link = el.getElementsByTagName('a')[0];
 		link.style.color = '#fff';
