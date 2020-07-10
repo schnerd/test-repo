@@ -10,7 +10,7 @@
 	}
 
 	if (!supportsArrowFunctions) {
-		const el = document.createElement('div');
+		var el = document.createElement('div');
 		el.innerHTML =
 			'<div>Oh no! You\'re using an old browser that is not supported, please visit <a href="https://browsehappy.com/">Browse Happy</a> to get a modern browser.</div>';
 		el.style.position = 'fixed';
@@ -25,7 +25,7 @@
 		el.style.textAlign = 'center';
 		document.body.append(el);
 
-		const link = el.getElementsByTagName('a')[0];
+		var link = el.getElementsByTagName('a')[0];
 		link.style.color = '#fff';
 	}
 })();
